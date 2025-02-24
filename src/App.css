@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(3, 300px); /* 3 rows with fixed height */
+  gap: 20px; /* Space between grid items */
+  max-width: 1200px; /* Limit the maximum width of the dashboard */
+  margin: 0 auto; /* Center the dashboard */
+}
+
+.dashboard > div {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: auto; /* Make content scrollable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.chart-container {
+  flex: 1; /* Allow the chart to take up remaining space */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.filters input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.stock-news ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.stock-news ul li {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.stock-news ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.stock-news ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #f5f5f5;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Search box styling */
+.search-box {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-box button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Chart container styling */
+.chart-container {
+  margin-top: 20px;
+  height: 400px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Color coding for performance and change */
+td:nth-child(2),
+td:nth-child(3) {
+  font-weight: bold;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+}

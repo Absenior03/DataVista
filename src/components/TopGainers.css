@@ -1,0 +1,34 @@
+.top-gainers {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.top-gainers h2 {
+  margin-top: 0;
+}
+
+.top-gainers ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.top-gainers li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.top-gainers li:last-child {
+  border-bottom: none;
+}
+
+.top-gainers .symbol {
+  font-weight: bold;
+}
+
+.top-gainers .percentage.gain {
+  color: green;
+}

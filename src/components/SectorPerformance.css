@@ -1,0 +1,77 @@
+.sector-performance {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.sector-performance h2 {
+  margin-top: 0;
+}
+
+.chart-container {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  gap: 20px;
+}
+
+.chart-section {
+  flex: 1;
+}
+
+.insights-section {
+  flex: 1;
+}
+
+.all-sectors ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.all-sectors li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.all-sectors li:hover {
+  background-color: #f1f1f1;
+}
+
+.sector-name {
+  font-weight: bold;
+}
+
+.sector-performance {
+  color: #007bff;
+}
+
+.sector-details {
+  text-align: left;
+}
+
+.sector-details h3 {
+  margin-top: 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
